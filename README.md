@@ -9,14 +9,18 @@ Portfolio Link:- https://nimble-speculoos-01bc5d.netlify.app/
 │   └── dog.jpg            # Example profile image used
 ├── aswinichirumamilla16.pdf # Embedded resume PDF
 └── README.md              # Project documentation (this file)
+
+
 🎯 Features
 🛠 Skills Section
 1.Grid layout of technologies known
 2.Hover effects for visual interaction
+
 📁 Projects Section
 . Dynamic grid of project cards
 . Project names with placeholder links
 . GitHub profile linked
+
 📄 Resume Section
   Embedded PDF viewer using <iframe>
   Direct link to download resume
