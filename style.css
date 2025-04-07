@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #262525;
+  overflow-x: hidden;
+}
+
+.protfolio-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.navlist {
+  display: flex;
+  gap: 3.5rem;
+  height: 15vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: #262525;
+  z-index: 1000;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #ffffff;
+  position: relative;
+}
+
+/*.navlist li a::after,
+.navlist .active::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: .1rem;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s;
+}*/
+.navlist li a::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: .1rem;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s;
+}
+
+.navlist li a.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navlist li a:hover::after,
+.navlist .active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.icons a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+}
+
+.icons .fa-brands {
+  color: #bbb;
+  font-size: 1.7rem;
+}
+
+.icons .fa-brands:hover {
+  background: linear-gradient(#fff, #3877FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left-container {
+  background: #262525;
+  width: 70%;
+  height: 100vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 15vh;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 38rem;
+}
+
+.content .intro {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.content .intro span {
+  color: #5DB9ee;
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: #5DB9ee;
+}
+
+.content .detail {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 1.1rem 0 3rem 0;
+  line-height: 1.8rem;
+}
+
+.btn-container button {
+  border: .1rem solid #5DB9ee;
+  font-size: 1.1rem;
+  padding: .8rem 1.5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+button:nth-child(1) {
+  background: #5DB9ee;
+  color: #262525;
+}
+
+button:nth-child(2) {
+  background: transparent;
+  color: #5DB9ee;
+  margin-left: 2rem;
+}
+
+button:nth-child(1):hover {
+  background: transparent;
+  color: #5DB9ee;
+}
+
+button:nth-child(2):hover {
+  background: #5DB9ee;
+  color: #262525;
+}
+
+.right-container {
+  background: linear-gradient(-45deg, #3877FF, #262525 70%);
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.design .circle {
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+  background: linear-gradient(90deg, transparent 50%, #262525 50%);
+  width: 38rem;
+}
+
+.circle:nth-child(2) {
+  width: 30rem;
+  background-image: url("image/dog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: .3rem solid white;
+  box-shadow:
+    0 0 1rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877FF,
+    inset 0 0 2rem #3877FF,
+    0 0 4rem #3877FF,
+    inset 0 0 4rem #3877FF;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  display: flex;
+  background: #1e1e1e;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-image: url("image/dog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: .3rem solid white;
+  box-shadow:
+    0 0 1rem #fff,
+    0 0 2rem #3877FF;
+}
+
+.about-right {
+  flex: 2;
+  padding: 2rem;
+}
+
+.about-right h1 {
+  color: #5DB9ee;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-right p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .protfolio-container {
+    flex-direction: column;
+  }
+
+  .left-container,
+  .right-container,
+  .about-section {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .icons {
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .design .circle {
+    display: none;
+  }
+
+  .about-image {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .about-right {
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
+.about-section {
+    display: flex;
+    background: #1e1e1e;
+    color: #fff;
+    padding: 4rem 2rem;
+    gap: 4rem; /* <-- Add this */
+  }
+  .about-right h1 {
+    color: #5DB9ee;
+    font-size: 3rem; /* <-- increase */
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-right p {
+    font-size: 1.4rem; /* <-- increase */
+    line-height: 2rem; /* optional, improves readability */
+  }
+  .skills-section {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .skills-section .section-title {
+    font-size: 2.5rem;
+    color: #5DB9ee;
+    margin-bottom: 2rem;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns */
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .skill {
+    background: #262525;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 0 1rem #5DB9ee;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill:hover {
+    transform: scale(1.1);
+    background: #5DB9ee;
+    color: #262525;
+  }
+  .projects-section {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .projects-section .section-title {
+    font-size: 2.5rem;
+    color: #5DB9ee;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+  }
+  
+  .project-card {
+    background: #262525;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #5DB9ee;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    background: #5DB9ee;
+    color: #262525;
+  }
+  
+  .project-card h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .project-card a {
+    color: #5DB9ee;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-card:hover a {
+    color: #262525;
+  }
+  
+  .github-link {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .github-link a {
+    color: #5DB9ee;
+    text-decoration: underline;
+  }
+  .contact-section {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .contact-section .section-title {
+    font-size: 2.5rem;
+    color: #5DB9ee;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+  }
+  
+  .contact-info p {
+    margin: 1rem 0;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #5DB9ee;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #262525;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #5DB9ee;
+    color: #262525;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #3877FF;
+  }
+  a.btn {
+    border: .1rem solid #5DB9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    color: #262525;
+    background: #5DB9ee;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  .resume-section {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .resume-section .section-title {
+    font-size: 2.5rem;
+    color: #5DB9ee;
+    margin-bottom: 2rem;
+  }
+  
+  .resume-section iframe {
+    box-shadow: 0 0 1rem #5DB9ee;
+    border-radius: 0.5rem;
+  }
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .form-row input,
+  .form-row textarea {
+    flex: 1 1 20%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-row textarea {
+    min-width: 200px;
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .form-row .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #5DB9ee;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+} 
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.2); /* light transparent text */
+  pointer-events: none; /* so it doesn't interfere with clicks */
+  user-select: none;    /* can't be selected */
+  z-index: 999;
+left: 90%;
+transform: translateX(-50%);
+right: auto;
+font-size: 24px;
+font-family: 'Courier New', monospace;
+}
