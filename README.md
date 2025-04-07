@@ -11,8 +11,8 @@ Portfolio Link:- https://nimble-speculoos-01bc5d.netlify.app/
 └── README.md              # Project documentation (this file)
 
 
-🎯 Features
-🛠 Skills Section
+🎯 Features:
+🛠 Skills Section.
 1.Grid layout of technologies known
 2.Hover effects for visual interaction
 
@@ -47,12 +47,7 @@ Update Resume
 Add Projects
   In the Projects section of index.html, you can duplicate and modify the .project-card divs:
 
-html
-<div class="project-card">
-  <h3>Project Title</h3>
-  <p>Short description of the project.</p>
-  <a href="your-project-link" target="_blank">View Project</a>
-</div>
+https://github.com/AswiniChirumamilla/portfolio
 📱 Responsive Design
 . The website is fully responsive:
 ' Media queries adjust layout for mobile and tablet views.
