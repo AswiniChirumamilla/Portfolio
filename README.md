@@ -1,13 +1,21 @@
 A fully responsive, modern personal portfolio website built with HTML, CSS, and JavaScript. This project showcases your skills, projects, resume, and provides contact functionality — all wrapped in a clean and interactive UI.
+
 Portfolio Link:- https://animated-tulumba-0da050.netlify.app/
+
 📁 Project Structure
 >.
 ├── index.html             # Main HTML file
+
 ├── style.css              # Styling for all components
+
 ├── script.js              # JavaScript for interactivity
+
 ├── image/                 # Folder for profile and project images
+
 │   └── dog.jpg            # Example profile image used
+
 ├── aswinichirumamilla16.pdf # Embedded resume PDF
+
 └── README.md              # Project documentation (this file)
 
 
