@@ -21,28 +21,39 @@ Portfolio Link:- https://animated-tulumba-0da050.netlify.app/
 
 🎯 Features:
 🛠 Skills Section.
+
 1.Grid layout of technologies known
+
 2.Hover effects for visual interaction
 
 📁 Projects Section
+
 . Dynamic grid of project cards
+
 . Project names with placeholder links
+
 . GitHub profile linked
 
 📄 Resume Section
-  Embedded PDF viewer using <iframe>
-  Direct link to download resume
+  
+  >Embedded PDF viewer using <iframe>
+  
+  >Direct link to download resume
 ✉️ Contact Section
-  Contact form with input validation
-  Social media links
-  Responsive and accessible layout
+  >Contact form with input validation
+  
+  >Social media links
+  
+  >Responsive and accessible layout
 📸 Screenshots
-  Include screenshots of the Home, About, Skills, Projects, Resume, and Contact sections here if publishing online.
+  > Include screenshots of the Home, About, Skills, Projects, Resume, and Contact sections here if publishing online.
 🚀 Getting Started
   To run this project locally:
-    Clone or download this repository.
-    Make sure you have a web browser installed (e.g., Chrome).
-    Open index.html in the browser.
+   1. Clone or download this repository.
+   
+   2. Make sure you have a web browser installed (e.g., Chrome).
+   
+   3.Open index.html in the browser.
 Or use a live server:
 If using VS Code:
 i. Install Live Server extension.
