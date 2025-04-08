@@ -1,5 +1,5 @@
 A fully responsive, modern personal portfolio website built with HTML, CSS, and JavaScript. This project showcases your skills, projects, resume, and provides contact functionality — all wrapped in a clean and interactive UI.
-Portfolio Link:- https://nimble-speculoos-01bc5d.netlify.app/
+Portfolio Link:- https://animated-tulumba-0da050.netlify.app/
 📁 Project Structure
 .
 ├── index.html             # Main HTML file
